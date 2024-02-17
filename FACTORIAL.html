@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <legend>Factorial</legend>
+    <lable for="text">Enter a Number:</lable>
+    <input type="text" id="number" ><br>
+    <lable for="number">Factorial Value:</lable>
+    <input type="number" id="t1" value="number"><br>
+
+    <input type="button"  value="Find" onclick="find()">
+    <input type="button"  value="Clear" onclick="clr()">
+
+
+<script>
+    function find(){
+        let n =document.getElementById("number").value;
+        let fact=1;
+        
+        for(
+           let i=1;
+            i<=n;
+            i++
+        )
+        { fact= fact*i}
+        document.getElementById("t1").value=fact;
+ }
+ function clr(){
+        document.getElementById("number").value="";
+        document.getElementById("t1"). value="";
+    }
+</script>
+    
+</body>
+</html>
